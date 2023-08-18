@@ -30,4 +30,5 @@ run:
 
 docker run -it --network=network_data_scraping -v data_scraping:/app msellamiwebscapping:latest
 
+
 (docker run -it -v data_scraping:/app --network="host" msellamiwebscapping:latest)
