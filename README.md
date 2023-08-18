@@ -8,12 +8,15 @@ docker network create network_data_scraping
 
 mysql:
 
+cd mysql
 
 docker build -t my-mysql .
 
 docker run -d -p 3306:3306 --network=network_data_scraping --name my-mysql -e MYSQL_ROOT_PASSWORD=supersecret my-mysql
 
 (docker run -d -p 3306:3306 --name my-mysql -e MYSQL_ROOT_PASSWORD=supersecret my-mysql)
+
+cd ..
 
 
 app:
