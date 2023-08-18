@@ -1,13 +1,13 @@
 # web-scrapping
 
 
-#network:
+**network:**
 
 docker network create network_data_scraping
 
 
 
-#mysql:
+**mysql:**
 
 cd mysql
 
@@ -22,24 +22,24 @@ cd ..
 
 
 
-#app:
+**app:**
 
 docker build --tag  msellamiwebscapping:latest .
 
 
-#volume:
+**volume:**
 
 docker volume create data_scraping
 
 
-#run:
+**run:**
 
 docker run -it --network=network_data_scraping -v data_scraping:/app msellamiwebscapping:latest
 
 
 
 
-#vérifier les données mysql:
+**vérifier les données mysql:**
 
 docker exec -it my-mysql mysql -uroot -p
 
