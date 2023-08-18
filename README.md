@@ -2,9 +2,12 @@
 
 
 network:
+
 docker network create network_data_scraping
 
+
 mysql:
+
 
 docker build -t my-mysql .
 
