@@ -1,0 +1,23 @@
+version: '3.8'
+
+networks:
+  network_data_scraping:
+    driver: bridge
+
+volumes:
+  data_scraping:
+    driver: local
+
+services:
+  mysql:
+    build:
+      context: ./mysql
+      dockerfile: Dockerfile
+    image: my-mysql
+    container_name: my-mysql
+    environment:
+      - MYSQL_ROOT_PASSWORD=supersecret
+    ports:
+      - "3306:3306"
+    networks:
+      - network_data_scraping
