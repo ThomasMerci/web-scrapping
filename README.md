@@ -32,3 +32,17 @@ docker run -it --network=network_data_scraping -v data_scraping:/app msellamiweb
 
 
 (docker run -it -v data_scraping:/app --network="host" msellamiwebscapping:latest)
+
+
+
+vérifier les données mysql:
+
+docker exec -it my-mysql bash
+
+dans le bash: show databases;
+
+SHOW TABLES;
+
+DESCRIBE jobs;
+
+SELECT * FROM jobs LIMIT 10;
