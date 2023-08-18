@@ -11,12 +11,11 @@ app:
 
 docker build --tag  msellamiwebscapping:latest .
 
-docker run -it --network="host" msellamiwebscapping:latest
-
-
 
 volume:
 
 docker volume create data_scraping
 
-docker run -it -v data_scraping:/app msellamiwebscapping:latest
+
+run:
+docker run -it -v data_scraping:/app --network="host" msellamiwebscapping:latest
