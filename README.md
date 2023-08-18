@@ -1,6 +1,16 @@
 # web-scrapping
 
 
+**Lancement**
+docker-compose up -d
+
+docker start my-mysql
+
+docker start msellamiwebscapping
+
+
+**OU**
+
 **network:**
 
 docker network create network_data_scraping
