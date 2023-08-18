@@ -1,3 +1,5 @@
 beautifulsoup4
 pandas
 sqlalchemy
+pymysql
+cryptography
