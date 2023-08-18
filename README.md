@@ -40,7 +40,10 @@ docker run -it --network=network_data_scraping -v data_scraping:/app msellamiweb
 
 vérifier les données mysql:
 
-docker exec -it my-mysql bash
+docker exec -it my-mysql mysql -uroot -p
+
+(docker exec -it my-mysql bash)
+
 
 dans le bash: show databases;
 
