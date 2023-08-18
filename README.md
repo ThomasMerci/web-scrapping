@@ -11,6 +11,8 @@ docker start msellamiwebscapping
 
 **OU**
 
+**[**
+
 **network:**
 
 docker network create network_data_scraping
@@ -47,6 +49,7 @@ docker volume create data_scraping
 docker run -it --network=network_data_scraping -v data_scraping:/app msellamiwebscapping:latest
 
 
+**]**
 
 
 **vérifier les données mysql:**
