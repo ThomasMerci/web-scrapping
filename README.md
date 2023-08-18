@@ -43,10 +43,11 @@ vérifier les données mysql:
 
 docker exec -it my-mysql mysql -uroot -p
 
-(docker exec -it my-mysql bash)
 
 
-dans le bash: show databases;
+dans le bash: 
+
+show databases;
 
 USE jobs_scraping;
 
