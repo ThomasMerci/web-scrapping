@@ -1,5 +1,3 @@
-# This file defines the Docker container that will contain the Crawler app.
-# From the source image #python
 FROM python:3.6-slim 
 
 # Identify maintainer
