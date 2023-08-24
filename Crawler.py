@@ -27,7 +27,6 @@ for job in allJobs:
     resume = resumes.get_text()
     resume_offre.append(resume)
  
-#Print all Titles Jobs
 print(titre_offre)
 #Print all Date Pub
 #print(date_offre)
@@ -38,7 +37,8 @@ dfJobs = pd.DataFrame({
  'DATE_PUB_OFFRE': date_offre,
  'RESUME_OFFRE': resume_offre
 })
-# create sqlalchemy engine
+
+
 user = 'root'
 passw = 'supersecret'
 host = 'my-mysql'
